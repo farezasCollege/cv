@@ -1,9 +1,13 @@
-section{
-	width: 100%;
-	height: 100%;
-	float: left;
+*{
 	padding: 0;
 	margin: 0;
+}
+
+section{
+	width: 100%;
+	height: 1000px;
+	float: left;
+	display: flex;
 }
 
 body, html{
@@ -13,6 +17,7 @@ body, html{
 
 #home{
 	background-image: url("profil.jpg");
+
 	background-position: center center;
 	background-size: cover;
 	min-height: 100%;
@@ -24,6 +29,15 @@ body, html{
 	position: absolute;
 	top: 0;
 	left: 0;
+}
+
+/*#space{
+	height: 100%;
+
+}*/
+
+.timeline-butt, .teks-bio{
+	
 }
 
 #home ul{
@@ -39,53 +53,76 @@ body, html{
 
 li a{
 	text-align: center;
-	padding: 14px 16px;
+	padding: 14px 27px;
 	text-decoration: none;
 	color: white;
 	font-size: 22px;
 	font-family: 'Goudy Bookletter 1911', Georgia, Times, serif;
 	font-weight: 1000;
+	border-radius: 100px/50px;
 }
 
 nav{
 	padding-top: 30px;
-	padding-left: 34%;
+	padding-left: 43%;
 	border-bottom: 2px;
 }
 
 li a:hover{
-	color: #a9a9a9;
+	background-color: #a9a9a9;
+	font-size: 30px;
+	opacity: 0.8;
 }
 
 /* endof section home */
 
 /* section 2 */
 #bio{
-	background-color: white;
+	background-color: black;
 	background-size: cover;
+	color: white;
+	min-height: 100%;
+	min-width: 1024px;
+	background-position: center center;
+
+	margin-top: 43%;
 }
 
 .timeline-butt{
-	padding-top: 12%;
-	padding-left: 11px;
+	padding-top: 14%;
+	padding-left: 4%;
 	text-align: left;
 	position: absolute;
+	cursor: pointer;
+	font-size: 32px;
 }
 
 .timeline-butt b{
 	padding: 12px;
 	border:none;
-	color: black;
+	color: white;
 	display: block;
 	text-decoration: none;
 }
 
 .timeline-butt b:hover {
   color: #ccc;
+  font-size: 38px;
 }
 
 .timeline-butt b.active {
   color: green;
+}
+
+.teks-bio{
+	padding-left: 20%;
+	padding-top: 3%;
+	visibility: hidden;
+}
+
+.teks-bio a{
+	padding: 22px;
+	font-size: 26px;
 }
 
 

@@ -5,20 +5,20 @@
 	<link rel="stylesheet" type="text/css" href="cv.css">
 	<link href="https://fonts.googleapis.com/css?family=Corben" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 </head>
 <body>
 	<section id="home">
-			<nav>	
-				<ul>
-					<li><a href="#home">Home</a></li>
-					<li><a href="#bio">Bio</a></li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
-			</nav>
+		<nav>	
+			<ul>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#bio">Bio</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
 	</section>
 
-	<section></section>
+	<!-- <section id="space"></section> -->
 
 	<section id="bio">
 		<div class="timeline-butt">
@@ -30,51 +30,64 @@
 		</div>
 
 		<div class="teks-bio">
-			<div id="lahir-teks">
+			<a><div id="lahir-teks">
 				<h1>
 					1999
 				</h1>
 				<h4>
 					Was born in Yogyakarta on May 5th 1999
 				</h4>
-			</div>
+			</div></a>
 
-			<div id="sd-teks">
+			<a><div id="sd-teks">
 				<h1>
 					2005
 				</h1>
 				<h4>
 					Attend Elementary School,<br> Lamper Kidul 02 state elementary school
 				</h4>
-			</div>
+			</div></a>
 
-			<div id="smp-teks">
+			<a><div id="smp-teks">
 				<h1>
 					2011
 				</h1>
 				<h4>
 					Attend Junior High School,<br> Junior High School 8 Semarang
 				</h4>
-			</div>
+			</div></a>
 
-			<div id="sma-teks">
+			<a><div id="sma-teks">
 				<h1>
 					2014
 				</h1>
 				<h4>
 					Attend Senior High School,<br> Senior High School 2 Semarang
 				</h4>
-			</div>
+			</div></a>
 
-			<div id="kulyeah-teks">
+			<a><div id="kulyeah-teks">
 				<h1>
-					2014
+					2017
 				</h1>
 				<h4>
 					Attend college, <br> Telkom University Bandung
 				</h4>
-			</div>
-		</div>		
+			</div></a>
+		</div>
+
+		<script type="text/javascript">
+			$("#lahir").hover(function(){
+				$("#lahir-teks").css({"visibility":"visible","padding-top":"42%"});
+				$("#bio").css("background-color","");
+				document.getElementById("bio").style.backgroundImage = "url('tugu.jpg')";
+			});
+
+			$("#lahir").mouseout(function(){
+				$(".teks-bio").css({"padding-top": "3%",
+				  "visibility": "hidden"});
+			});
+		</script>		
 	</section>
 
 	<section id="contact">
