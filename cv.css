@@ -61,10 +61,32 @@ li a:hover{
 
 /* section 2 */
 #bio{
-	background-color: black
+	background-color: white;
+	background-size: cover;
 }
 
-#1999{
-
+.timeline-butt{
+	padding-top: 12%;
+	padding-left: 11px;
+	text-align: left;
+	position: absolute;
 }
+
+.timeline-butt b{
+	padding: 12px;
+	border:none;
+	color: black;
+	display: block;
+	text-decoration: none;
+}
+
+.timeline-butt b:hover {
+  color: #ccc;
+}
+
+.timeline-butt b.active {
+  color: green;
+}
+
+
 
