@@ -77,16 +77,56 @@
 		</div>
 
 		<script type="text/javascript">
-			$("#lahir").hover(function(){
+			$("#lahir").hover(function(){   //on hover
 				$("#lahir-teks").css({"visibility":"visible","padding-top":"42%"});
-				$("#bio").css("background-color","");
-				document.getElementById("bio").style.backgroundImage = "url('tugu.jpg')";
+				$("#bio").fadeTo('slow',0.3,function(){
+					$(this).css({"background-color":"","background-image":"url('tugu.jpg')"});
+				}).fadeTo('slow',1);
+			},
+			function(){    //on out
+				$("#lahir-teks").css({"visibility":"hidden","padding-top":"3%"});
 			});
 
-			$("#lahir").mouseout(function(){
-				$(".teks-bio").css({"padding-top": "3%",
-				  "visibility": "hidden"});
+			$("#sd").hover(function(){   //on hover
+				$("#sd-teks").css({"visibility":"visible","padding-top":"20%"});
+				$("#bio").fadeTo('slow',0.3,function(){
+					$(this).css({"background-color":"","background-image":"url('tugu.jpg')"}); //change the source
+				}).fadeTo('slow',1);
+			},
+			function(){    //on out
+				$("#sd-teks").css({"visibility":"hidden","padding-top":"3%"});
 			});
+
+			$("#smp").hover(function(){   //on hover
+				$("#smp-teks").css({"visibility":"visible","padding-top":"1%"});
+				$("#bio").fadeTo('slow',0.3,function(){
+					$(this).css({"background-color":"","background-image":"url('tugu.jpg')"}); //change the source
+				}).fadeTo('slow',1);
+			},
+			function(){    //on out
+				$("#smp-teks").css({"visibility":"hidden","padding-top":"3%"});
+			});
+
+			$("#sma").hover(function(){   //on hover
+				$("#sma-teks").css({"visibility":"visible","padding-top":"-100px"});
+				$("#bio").fadeTo('slow',0.3,function(){
+					$(this).css({"background-color":"","background-image":"url('tugu.jpg')"}); //change the source
+				}).fadeTo('slow',1);
+			},
+			function(){    //on out
+				$("#sma-teks").css({"visibility":"hidden","padding-top":"3%"});
+			});
+
+			$("#kulyeah").hover(function(){   //on hover
+				$("#kulyeah-teks").css({"visibility":"visible","padding-top":"-150px"});
+				$("#bio").fadeTo('slow',0.3,function(){
+					$(this).css({"background-color":"","background-image":"url('tugu.jpg')"}); //change the source
+				}).fadeTo('slow',1);
+			},
+			function(){    //on out
+				$("#kulyeah-teks").css({"visibility":"hidden","padding-top":"3%"});
+			});
+
 		</script>		
 	</section>
 
