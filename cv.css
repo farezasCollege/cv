@@ -16,7 +16,7 @@ body, html{
 }
 
 #home{
-	background-image: url("profil.jpg");
+	background: linear-gradient(to right, rgba(0,0,0,1), rgba(17,17,17,1), rgba(105,100,100,0.62)), url("profil.jpg");
 
 	background-position: center center;
 	background-size: cover;
@@ -31,13 +31,25 @@ body, html{
 	left: 0;
 }
 
-/*#space{
-	height: 100%;
+#kenalan {
+	color: white;
+	float: left;
+	padding-top: 14%;
+	padding-left: 4%;
+	text-align: left;
+	position: absolute;
+}
 
-}*/
-
-.timeline-butt, .teks-bio{
+#kenalan h1{
 	
+}
+
+#kenalan h4{
+
+}
+
+#kenalan h5{
+
 }
 
 #home ul{
@@ -64,14 +76,12 @@ li a{
 
 nav{
 	padding-top: 30px;
-	padding-left: 43%;
-	border-bottom: 2px;
+	padding-left: 39%;
 }
 
 li a:hover{
-	background-color: #a9a9a9;
-	font-size: 30px;
-	opacity: 0.8;
+	font-size: 27px;
+	color: #3f3e39;
 }
 
 /* endof section home */
@@ -85,7 +95,7 @@ li a:hover{
 	min-width: 1024px;
 	background-position: center center;
 
-	margin-top: 43%;
+	margin-top: 47%;
 }
 
 .timeline-butt{
@@ -110,19 +120,10 @@ li a:hover{
   font-size: 38px;
 }
 
-.timeline-butt b.active {
-  color: green;
-}
-
 .teks-bio{
 	padding-left: 20%;
-	padding-top: 3%;
+	padding-top: 20%;
 	visibility: hidden;
-}
-
-.teks-bio a{
-	padding: 22px;
-	font-size: 26px;
 }
 
 
