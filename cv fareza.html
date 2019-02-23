@@ -5,7 +5,7 @@
 	<link rel="stylesheet" type="text/css" href="cv.css">
 	<link href="https://fonts.googleapis.com/css?family=Corben" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Dosis:200" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Dosis:200|Signika|Viga|Lalezar" rel="stylesheet">
 	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" type="text/javascript"></script>
 </head>
@@ -47,6 +47,7 @@
 		</div>
 
 		<script type="text/javascript">
+			
 			//text animation home
 			$("#kenalan h1").css({"font-family":"'Dosis',sans-serif","font-size":"120px"}).fadeIn("slow").delay(3000);
 			$("#kenalan h1").fadeOut(function() {
@@ -72,9 +73,12 @@
 			//text animation home end~
 
 			//text bio animation
-
+			var scroll=false;
 			$(window).scroll(function(){
-				$("#timeline-butt").css({"font-family":"'Dosis',sans-serif","font-size":"120px"}).fadeIn("slow");
+				$(".timeline-butt").delay(600).css("visibility","visible").effect("slide","slow");
+				if($(window).click(function(){
+					$(".timeline-butt").css("visibility","visible").stop(true,true);
+				}));
 			});
 
 			$("#lahir").hover(function(){   //on hover
@@ -107,14 +111,56 @@
 	</section>
 
 	<section id="contact">
-		
-	</section>
-</script>
+			<div id="ktk">
+				<div id="gambar-kontak">
+					<img src="fb.png">
+					<img src="github.png">
+					<img src="gmail.png">
+				</div>
+			</div>	
 
+			<div id="kontak">
+				<p id="fb">facebook.com/fareza.adityanto</p>
+				<p id="git">github.com/farezasCollege</p>
+				<p>farezadit@student.telkomuniversity.ac.id</p>
+			</div>
+				<h1>Reach me on</h1>
+
+			<script type="text/javascript">
+				$("#fb").click(function(){
+					window.open('https://www.fb.com/fareza.adityanto');
+				});
+				$("#git").click(function(){
+					window.open('https://github.com/farezasCollege');
+				});
+			</script>
+	</section>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+		   	var stickyNavTop = $('nav').offset().top;
+		   	var stickyNav = function(){
+			    var scrollTop = $(window).scrollTop(); 
+			    if (scrollTop > stickyNavTop) { 
+			        $('nav').addClass('sticky');
+			    } else {
+			        $('nav').removeClass('sticky'); 
+			    }
+			};
+
+			stickyNav();
+
+			$(window).scroll(function() {
+				stickyNav();
+			});
+		});$(window).scroll(function(){
+
+		});
+	</script>
 </body>
 
 <footer>
-	
+	<p>copyright: Fareza Adityanto</p>
 </footer>
 
 </html>
