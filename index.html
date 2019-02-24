@@ -8,21 +8,23 @@
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" type="text/javascript"></script>
 </head>
 <body>
-	<section id="home">
-		<nav>	
-			<ul>
-				<li><a href="#home">Home</a></li>
-				<li><a href="#bio">Bio</a></li>
-				<li><a href="#contact">Contact</a></li>
-			</ul>
-		</nav>
+	<header id="home">
+		<div id="bg-home">
+			<nav>	
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#bio">Bio</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
 
 		<home-teks id="kenalan">
 			<h1>Hello!!</h1>
 			<h4></h4>
 			<h5></h5>
 		</home-teks>
-	</section>
+	</header>
 
 	<section id="bio">
 			<div class="timeline-butt">
@@ -72,7 +74,6 @@
 			//text animation home end~
 
 			//text bio animation
-			var scroll=false;
 			$(window).scroll(function(){
 				$(".timeline-butt").delay(600).css("visibility","visible").effect("slide","slow");
 				if($(window).click(function(){
@@ -119,12 +120,12 @@
 			</div>	
 
 			<div id="kontak">
-				<p alt="facebook" id="fb">facebook.com/fareza.adityanto</p>
-				<p alt="github" id="git">github.com/farezasCollege</p>
-				<p alt="email">farezadit@student.telkomuniversity.ac.id</p>
+				<p id="fb">facebook.com/fareza.adityanto</p>
+				<p id="git">github.com/farezasCollege</p>
+				<p id="email">farezadit@student.telkomuniversity.ac.id</p>
 			</div>
 
-				<h1>Reach me on</h1>
+			<h1>Reach me on</h1>
 
 			<script type="text/javascript">
 				$("#fb").click(function(){
@@ -133,9 +134,9 @@
 				$("#git").click(function(){
 					window.open('https://github.com/farezasCollege');
 				});
-				/*$(window).scroll(function(){
-					$("#gambar-kontak, #kontak").effect("slide","slow").delay(700).effect("fade","slow");
-				});*/
+				$("#email").click(function(){
+					window.open('https://mail.google.com/mail/?view=cm&fs=1&to=farezadit@student.telkomuniversity.ac.id');
+				});
 			</script>
 	</section>
 
@@ -162,24 +163,18 @@
 		});		
 
 		$(document).ready(function(){
-  		// Add smooth scrolling to all links
   		$("a").on('click', function(event) {
 
-    	// Make sure this.hash has a value before overriding default behavior
     	if (this.hash !== "") {
-      	// Prevent default anchor click behavior
       		event.preventDefault();
 
       		// Store hash
       		var hash = this.hash;
 
-      		// Using jQuery's animate() method to add smooth page scroll
-      		// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
       		$('html, body').animate({
         	scrollTop: $(hash).offset().top
       		}, 800, function(){
    
-        	// Add hash (#) to URL when done scrolling (default click behavior)
         	window.location.hash = hash;
       		});
     	} // End if

@@ -15,7 +15,7 @@ body, html{
 	width: 100%;
 }
 
-#home{
+#bg-home{
 	background: linear-gradient(to right, rgba(0,0,0,1), rgba(17,17,17,1), rgba(105,100,100,0.62)), url("profil.jpg");
 
 	background-position: center center;
@@ -83,7 +83,7 @@ li a:hover{
 	min-width: 1024px;
 	background-position: center center;
 
-	margin-top: 47.4%;
+	margin-top: 47.6%;
 }
 
 .timeline-butt{
@@ -150,6 +150,8 @@ li a:hover{
 
 #kontak p:hover{
 	cursor: pointer;
+	font-size: 300%;
+	text-decoration: underline;
 }
 
 #gambar-kontak img{
