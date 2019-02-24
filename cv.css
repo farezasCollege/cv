@@ -40,18 +40,6 @@ body, html{
 	position: absolute;
 }
 
-#kenalan h1{
-	
-}
-
-#kenalan h4{
-
-}
-
-#kenalan h5{
-
-}
-
 #home ul{
 	list-style-type: none;
 	margin: 0;
@@ -88,14 +76,14 @@ li a:hover{
 
 /* section 2 */
 #bio{
-	background-color: #7e7e7e;
+	background: linear-gradient(to bottom, #000,#413d3d,#ddd);
 	background-size: cover;
 	color: white;
 	min-height: 100%;
 	min-width: 1024px;
 	background-position: center center;
 
-	margin-top: 40%;
+	margin-top: 47.4%;
 }
 
 .timeline-butt{
