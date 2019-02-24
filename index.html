@@ -3,9 +3,7 @@
 <head>
 	<title>CURRICULUM VITAE FAREZA ADITYANTO</title>
 	<link rel="stylesheet" type="text/css" href="cv.css">
-	<link href="https://fonts.googleapis.com/css?family=Corben" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Dosis:200|Signika|Viga|Lalezar" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Dosis:200|Signika|Viga|Lalezar|Corben|Raleway" rel="stylesheet">
 	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" type="text/javascript"></script>
 </head>
@@ -37,38 +35,38 @@
 
 			<div class="teks-bio">
 				<a><div id="lahir-teks">
-					<h1>
-					
-					</h1>
-					<h4>
-					
-					</h4>
+					<h1></h1>
+					<h4></h4>
 				</div></a>
 		</div>
 
 		<script type="text/javascript">
-			
-			//text animation home
-			$("#kenalan h1").css({"font-family":"'Dosis',sans-serif","font-size":"120px"}).fadeIn("slow").delay(2000);
-			$("#kenalan h1").fadeOut(function() {
+			$(document).ready(function(){
+				$("#kenalan h1").css({"font-family":"'Dosis',sans-serif","font-size":"120px"}).fadeIn("slow").delay(2000);
+				$("#kenalan h1").fadeOut(function() {
   				$(this).text("I'm Fareza").fadeIn("slow").delay(2000).fadeOut("slow");
-			});
-			$("#kenalan h1").css({"font-family":"'Dosis',sans-serif","font-size":"120px"}).fadeIn("slow").delay(2000);
-			$("#kenalan h1").fadeOut(function() {
+				});
+
+				$("#kenalan h1").css({"font-family":"'Dosis',sans-serif","font-size":"120px"}).fadeIn("slow").delay(2000);
+				$("#kenalan h1").fadeOut(function() {
   				$(this).text("I'm from").fadeIn("slow").delay(2000).fadeOut("slow");
   				$("#kenalan h4").css({"font-family":"'Dosis',sans-serif","font-size":"120px"}).text("Semarang").fadeIn("slow").delay(2000).fadeOut("slow");
-			});
-			$("#kenalan h1").css({"font-family":"'Dosis',sans-serif","font-size":"120px"}).fadeIn("slow").delay(2000);
-			$("#kenalan h1").fadeOut(function() {
+				});
+
+				$("#kenalan h1").css({"font-family":"'Dosis',sans-serif","font-size":"120px"}).fadeIn("slow").delay(2000);
+				$("#kenalan h1").fadeOut(function() {
   				$(this).css("font-size","90px").text("Know me more,").fadeIn("slow").delay(2000);
-			});
-			$("#kenalan h1").css({"font-family":"'Dosis',sans-serif","font-size":"120px"}).fadeIn("slow").delay(2000);
-			$("#kenalan h1").fadeOut(function() {
+				});
+
+				$("#kenalan h1").css({"font-family":"'Dosis',sans-serif","font-size":"120px"}).fadeIn("slow").delay(2000);
+				$("#kenalan h1").fadeOut(function() {
 				$("#kenalan").css("padding-top","9%");
   				$(this).css("font-size","170px").text("Fareza").fadeIn("slow").delay(2000);
   				$("#kenalan h4").css({"font-family":"'Dosis',sans-serif","font-size":"120px"}).text("Adityanto").fadeIn("slow").delay(2000);
   				$("#kenalan h5").css({"font-family":"'Dosis',sans-serif","font-size":"100px"}).text("1301174228").fadeIn("slow").delay(2000);
+				});
 			});
+			//text animation home
 
 			//text animation home end~
 
@@ -134,6 +132,9 @@
 				$("#git").click(function(){
 					window.open('https://github.com/farezasCollege');
 				});
+				$(window).scroll(function(){
+					$("#contact h1, #gambar-kontak img, #kontak p").effect("slide","slow").delay(700).effect("fade","slow");
+				});
 			</script>
 	</section>
 
@@ -156,12 +157,7 @@
 			});
 		});$(window).scroll(function(){
 
-		});
-
-		/*$(window).scroll(function(){
-			$("#contact h1, #gambar-kontak img, #kontak p").effect("slide","slow").delay(700).effect("fade","slow");
-		});*/
-		
+		});		
 	</script>
 </body>
 

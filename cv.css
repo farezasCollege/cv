@@ -177,9 +177,7 @@ li a:hover{
 .sticky {
   position: fixed;
   top: 0;
-  width: 30%;
-  background-color: #ddd;
-  float: center;
+  width: 100%;
 }
 
 /*navbar sticky end*/
