@@ -49,25 +49,25 @@
 		<script type="text/javascript">
 			
 			//text animation home
-			$("#kenalan h1").css({"font-family":"'Dosis',sans-serif","font-size":"120px"}).fadeIn("slow").delay(3000);
+			$("#kenalan h1").css({"font-family":"'Dosis',sans-serif","font-size":"120px"}).fadeIn("slow").delay(2000);
 			$("#kenalan h1").fadeOut(function() {
-  				$(this).text("I'm Fareza").fadeIn("slow").delay(3000).fadeOut("slow");
+  				$(this).text("I'm Fareza").fadeIn("slow").delay(2000).fadeOut("slow");
 			});
-			$("#kenalan h1").css({"font-family":"'Dosis',sans-serif","font-size":"120px"}).fadeIn("slow").delay(3000);
+			$("#kenalan h1").css({"font-family":"'Dosis',sans-serif","font-size":"120px"}).fadeIn("slow").delay(2000);
 			$("#kenalan h1").fadeOut(function() {
-  				$(this).text("I'm from").fadeIn("slow").delay(3000).fadeOut("slow");
-  				$("#kenalan h4").css({"font-family":"'Dosis',sans-serif","font-size":"120px"}).text("Semarang").fadeIn("slow").delay(3000).fadeOut("slow");
+  				$(this).text("I'm from").fadeIn("slow").delay(2000).fadeOut("slow");
+  				$("#kenalan h4").css({"font-family":"'Dosis',sans-serif","font-size":"120px"}).text("Semarang").fadeIn("slow").delay(2000).fadeOut("slow");
 			});
-			$("#kenalan h1").css({"font-family":"'Dosis',sans-serif","font-size":"120px"}).fadeIn("slow").delay(3000);
+			$("#kenalan h1").css({"font-family":"'Dosis',sans-serif","font-size":"120px"}).fadeIn("slow").delay(2000);
 			$("#kenalan h1").fadeOut(function() {
-  				$(this).css("font-size","90px").text("Know me more,").fadeIn("slow").delay(3000);
+  				$(this).css("font-size","90px").text("Know me more,").fadeIn("slow").delay(2000);
 			});
-			$("#kenalan h1").css({"font-family":"'Dosis',sans-serif","font-size":"120px"}).fadeIn("slow").delay(3000);
+			$("#kenalan h1").css({"font-family":"'Dosis',sans-serif","font-size":"120px"}).fadeIn("slow").delay(2000);
 			$("#kenalan h1").fadeOut(function() {
 				$("#kenalan").css("padding-top","9%");
-  				$(this).css("font-size","170px").text("Fareza").fadeIn("slow").delay(3000);
-  				$("#kenalan h4").css({"font-family":"'Dosis',sans-serif","font-size":"120px"}).text("Adityanto").fadeIn("slow").delay(3000);
-  				$("#kenalan h5").css({"font-family":"'Dosis',sans-serif","font-size":"100px"}).text("1301174228").fadeIn("slow").delay(3000);
+  				$(this).css("font-size","170px").text("Fareza").fadeIn("slow").delay(2000);
+  				$("#kenalan h4").css({"font-family":"'Dosis',sans-serif","font-size":"120px"}).text("Adityanto").fadeIn("slow").delay(2000);
+  				$("#kenalan h5").css({"font-family":"'Dosis',sans-serif","font-size":"100px"}).text("1301174228").fadeIn("slow").delay(2000);
 			});
 
 			//text animation home end~
@@ -124,6 +124,7 @@
 				<p id="git">github.com/farezasCollege</p>
 				<p>farezadit@student.telkomuniversity.ac.id</p>
 			</div>
+
 				<h1>Reach me on</h1>
 
 			<script type="text/javascript">
@@ -156,6 +157,11 @@
 		});$(window).scroll(function(){
 
 		});
+
+		$(window).scroll(function(){
+			$("#contact h1, #gambar-kontak img, #kontak p").effect("slide","slow").delay(700).effect("fade","slow");
+		});
+		
 	</script>
 </body>
 
