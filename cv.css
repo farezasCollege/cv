@@ -88,7 +88,7 @@ li a:hover{
 
 /* section 2 */
 #bio{
-	background-color: linear-gradient(to bottom, #100f0f, #191818, #222020, #2b2828, #343131, #3c3838, #433f3f, #4b4646, #524d4d, #5a5555, #615c5c, #696464);
+	background-color: linear-gradient(to bottom, #100f0f, #413d3d, #696464);
 	background-size: cover;
 	color: white;
 	min-height: 100%;
